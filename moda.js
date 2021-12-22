@@ -1,32 +1,27 @@
-const lista1 = [
-    1,
-    2,
-    3,
-    1,
-    2,
-    3,
-    4,
-    2,
-    2,
-    2,
-    1
-];
 
-const lista1count = {};
+function calcularmoda(lista){
+    
+    const listacount = {};
+    
+    lista.map(
+        function (elemento){
+           if (listacount[elemento]){
+                listacount[elemento] += 1;
+           }  else {
+                listacount[elemento] = 1;
+           }
+        }
+    ); 
 
-lista1.map(
-    function (elemento){
-       if (lista1count[elemento]){
-            lista1count[elemento] += 1;
-       }  else {
-            lista1count[elemento] = 1;
-       }
-    }
-);
+    const listaarray = Object.entries(listacount).sort(
+        function (elementoA, elementoB){
+            return elementoA[1] - elementoB[1];
+        }
+    );
+    
+    const moda = listaarray [listaarray.length - 1];
 
-const lista1array = object.entries (lista1count).sort(
-    function (){
-        
-    }
-);
+    console.log(moda);
+    
+};
 
