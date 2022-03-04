@@ -22,3 +22,10 @@
  - Segundo paso: implementar las formulas en Js
  - Tercer paso: crear funciones
  - Cuarto paso: integrar JS con Html
+
+ ## Reto: Proyecto libre. Calculadora de seguridad social.
+ 
+ - Primer paso: Definir el html
+ - Segundo paso: Definir las formulas que se usaran con Js
+ - Tercer paso: Implementar las formulas en Js
+ - Cuarto paso: Inregrar Js con html 
