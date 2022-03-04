@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de seguridad social </title>
+</head>
+<body>
+    <header>
+        <h1>
+           Calculadora de  seguridad social
+        </h1>
+    </header>
+    <section>
+     <h4><p>Esta aplicacion permite calcular la seguridad social de colombianos <br/> 
+        con ingresos como independiente o con contrato de prestacion de servicios.<br/>
+        Desglozando salud, pension y ARL. Su uso es valido para el año 2022.
+    </p></h4>  
+    </section> 
+    <section>
+        <p>Porfavor, introduzca su salario (debe ser de 1 salario minimo o mas):
+        </p>
+        <form>
+            <label for ="inputsalary"></label>
+            <input id ="inputsalarynumber" type="number"/>
+        </form>
+    </section> 
+    <section id="textoparacostos">
+
+        <br>
+            <label id="independientegastos">¿Tiene gastos y costos relacionados como independiente?</br></br> Introduzcalos:</label>  
+        </form>
+    </section>
+    <section id="costos">
+        <form>
+            </br>
+            <label for = "inputcost"></label>
+            <input id = "inputcostnumber" type="number"/>
+        </form>
+        </section>
+    <section>
+        <p>¿No tiene? Marque la casilla: <input id= "independientegastoscheckbox" type = "checkbox"/> </p>
+    </section>
+    <section>
+        <p></p>
+         <form>
+            <button type ="button" onclick= "onclickbuttonresult()">
+                Obtener resultado
+            </button>
+            <p id = "resultadofinal"></p>
+        </form>
+    </section>  
+    <script src="./Retolibre.js"></script>
+</body>
+</html>
