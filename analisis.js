@@ -62,6 +62,7 @@ const salarioscoltop10 = salarioscolsorted.splice(
 
 const medianatop10col = medianasalarios(salarioscoltop10);
 
+//final 
 
 console.log({
     medianageneralcol, 
